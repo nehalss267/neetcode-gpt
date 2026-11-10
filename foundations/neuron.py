@@ -9,6 +9,8 @@ class Solution:
         if activation=='sigmoid':
             y=1/(1+np.exp(-z))
         # relu activation
-        else:
+        elif activation=="relu":
             y=max(0,z)
+        else:
+            y=z
         return float(np.round(y,5))
